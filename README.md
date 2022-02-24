@@ -1,44 +1,57 @@
-# tutorial-template
+---
+author: [Deepak Cherian]
+date: [2022-03-09]
+tags: [xarray]
+---
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ProjectPythiaTutorials/tutorial-template/HEAD)
+# Thinking with Xarray
 
-The Project Pythia Tutorials organization is designed to be a single place to store all content for Project Pythia's Python Tutorial Seminar Series. Each tutorial seminar will have its own repository within this organization to house tutorial content (notebooks, data, and markdown).
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ProjectPythiaTutorials/thinking-with-xarray_2022_03_09/HEAD/)
+
+The Project Pythia Python Tutorial Seminar Series continues with "Thinking with Xarray" on **Wednesday, March 9th at 1 PM Mountain [Daylight/Standard] Time**. This session will be led by [Name].
+
+The content for this tutorial is hosted in the `.ipynb` notebook file(s) within the `tutorial` directory of this repository. The files include: [`topic_a.ipynb` and `topic_b.ipynb`].
 
 
-## Overview 
+## Pre-Requisistes
 
-The goal of this organization is to create a common location and environment for Pythia Python tutorials. For the Python learner, this has the benefits of more consistent installation / spin up before jumping in to each lesson. For the Pythia team, this ownership allows us to maintain content long-term so that we can fix things when they break or archive it, as we see fit.
+Some familiarity with Xarray is expected to make the most of this tutorial.
 
-We, the Pythia team, want to lower the barrier of entry for the tutorial speaker to develop and host their tutorial content in this organization. For the speaker's convenience we will provide a simple repository template from which a new repository can be modeled. These new repositories differ from the [pythia-foundations book](https://foundations.projectpythia.org/landing-page.html), which has a high barrier for entry, with its strict and consistent style guide and rigorous review process before merging. Further, the tutorial notebooks in this this organization's repositories are designed to be accompanied by a live speaker or recording. This means that the amount of explanatory text between code cells or excercises may differ between tutorials based on the tutorial speaker and developers' preferred styles.
 
-All tutorials are designed to be hosted on [Binder](https://mybinder.org/v2/gh/ProjectPythiaTutorials/tutorial-template/HEAD) where appropriate.
+## Bio
 
-## Organization
-The document tree of each tutorial repositories takes the following format:
+[Note: Please include a brief bio on yourself and your career path that touches on why you have some authority to present on your tutorial topic. Feel free to mention any hobbies, fun facts, or embed a photo.]
 
-```
-  TOPIC_YYYY_MM_DD/
-   |-  data/
-   |    |- `some_data.txt`
-   |- tutorial/
-   |    |-  `topic_a.ipynb`
-   |    |-  `topic_b.ipynb`
-   |-  `README.md`
-   |-  `environment.yaml`
- 
-```
 
-Some things to notice:
-- Store any necessary data in a `data` directory. If your dataset is too large for GitHub (100 MB limit per file), make a note of its location and how to access it (both remotely and locally) in your repository's `README.md` as well as a `/data/README.md`.
-- Within the `tutorials` directory there is a unique directory for every tutorial and a `template` directory, containing a markdown and a notebook template (coming soon). 
-- Each tutorial repository is named with its topic and date with the format `TOPIC_YYYY_MM_DD` (e.g.`pandas_2021_08_03`)
-- If a new tutorial on the same topic is contributed, a new repository with the new date is added (i.e. the pre-existing repository is not edited). 
-- Multi-session tutorials may have a repository directory for each session, preserving the state of the tutorial during each lesson (e.g. `matplotlib_part1_YYYY_MM_DD` and `matplotlib_part2_YYYY_MM_DD`), but multiple notebooks may be presented during a single tutorial (and thus housed in the same repository).
-- Each tutorial directory contains a `README.md` file. This `README.md` file should contain all pertinent information that will not be part of the tutorial presentation (e.g. preparation steps, past videos to watch beforehand, and the embedded recording from the tutorial ala the [ESDS blog posts](https://ncar.github.io/esds/blog/)). This should mimic the `README_template.md` file within this repository.
-- There is a single environment file for each tutorial repository.
+## How-to-Run
 
-## Contribution
+**All of the tutorials in this organization can be followed by clicking the "Launch Binder" button at the top level or in each directory.**
 
-For instructions on how to add your tutorial repository to this organization please visit `contributing.md`.
+You may also download the environment to run locally:
 
-If you would like to host a tutorial through the Project Pythia Tutorial Seminar Series, please reach out to us here on GitHub via a new issue or by emailing `projectpythia@ucar.edu`.
+- Check your conda install with `conda --version` and if necessary [install by following these instructions](https://docs.conda.io/en/latest/miniconda.html).
+
+- Clone this repository by running `git clone https://github.com/ProjectPythiaTutorials/thinking-with-xarray_2022_03_09` in your terminal.
+
+- Still in the terminal, create a Conda environment from the `environment.yml` file by first moving into the `thinking-with-xarray_2022_03_09` directory with `cd thinking-with-xarray_2022_03_09` and then `conda env update --file environment.yml`
+
+- Activate your environment in the terminal with `conda activate thinking-with-xarray_2022_03_09`.
+
+- Test your installation by launching JupyterLab with `jupyter lab`.
+
+
+## Sign Up
+
+To receive the Zoom link and password, please join the *learnpython@ucar.edu* Google group and Calendar.
+
+To join the *learnpython@ucar.edu* Google Group, follow this [link](https://groups.google.com/a/ucar.edu/g/learnpython/about) and click "Join Group" next to the group name.
+
+By attending this tutorial, you are subject to the [NCAR/UCAR Code of Conduct](https://www.ucar.edu/who-we-are/ethics-integrity/codes-conduct.)
+
+[Note: If it would be beneficial to review the related tutorials from this seminar series, please link to them here.]
+
+
+## Tutorial Recording
+
+This tutorial will be recorded and posted on our [YouTube channel](https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw).
+[Note: A Project Pythia team member will replace this section with the embedded video once it is ready.]
