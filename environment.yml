@@ -1,0 +1,7 @@
+name: pythia-tutorial_environment_template
+channels:
+  - conda-forge
+dependencies:
+  - jupyter
+  - jupyterlab
+  - mamba
