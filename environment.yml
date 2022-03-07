@@ -1,7 +1,12 @@
-name: pythia-tutorial_environment_template
+name: thinking-with-xarray_2022_03_09
 channels:
   - conda-forge
+  - nodefaults
 dependencies:
   - jupyter
   - jupyterlab
   - mamba
+  - matplotlib
+  - netcdf4
+  - pooch
+  - xarray
