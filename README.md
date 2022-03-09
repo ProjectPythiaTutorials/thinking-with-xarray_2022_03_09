@@ -20,7 +20,8 @@ Some familiarity with Xarray is expected to make the most of this tutorial.
 
 ## Bio
 
-[Note: Please include a brief bio on yourself and your career path that touches on why you have some authority to present on your tutorial topic. Feel free to mention any hobbies, fun facts, or embed a photo.]
+Deepak Cherian is a Project Scientist and physical oceanographer in CGD. He helps maintain xarray and xgcm, and contributes to other projects in the Pangeo ecosystem.
+
 
 
 ## How-to-Run
